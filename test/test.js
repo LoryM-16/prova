@@ -1,3 +1,3 @@
 console.log("hello kittysincula");
-var i =5;
+var i =6;
 console.log(i+1);
