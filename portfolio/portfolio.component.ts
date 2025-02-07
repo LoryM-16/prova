@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SafeUrlPipe } from '../safe-url.pipe'; // Importa il pipe
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { SafeUrlPipe } from '../safe-url.pipe';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule, SafeUrlPipe], // Importa CommonModule e SafeUrlPipe
+  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, SafeUrlPipe],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })

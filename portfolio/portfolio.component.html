@@ -1,17 +1,17 @@
-<section class="bio-section">
+<mat-card class="bio-section">
   <h2>{{ bio.title }}</h2>
   <p>{{ bio.description }}</p>
-</section>
+</mat-card>
 
-<section class="experience-section">
+<mat-card class="experience-section">
   <h2>{{ experience.title }}</h2>
   <p>{{ experience.description }}</p>
-</section>
+</mat-card>
 
-<section class="spotify-section">
+<mat-card class="spotify-section">
   <h2>Le Nostre Produzioni</h2>
   <div class="spotify-grid">
-    <div *ngFor="let track of spotifyTracks" class="spotify-embed">
+    <mat-card *ngFor="let track of spotifyTracks" class="spotify-embed">
       <iframe
         [src]="track.embedUrl | safeUrl"
         width="100%"
@@ -21,6 +21,6 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy">
       </iframe>
-    </div>
+    </mat-card>
   </div>
-</section>
+</mat-card>
