@@ -1,0 +1,63 @@
+/* Stile generale */
+:host {
+  display: block;
+  background-color: #1a1a1a; /* Sfondo scuro */
+  color: #e0e0e0; /* Testo chiaro */
+  font-family: 'Roboto', sans-serif; /* Font moderno */
+  padding: 2rem;
+}
+
+/* Sezioni */
+.bio-section, .experience-section, .spotify-section {
+  background-color: #262626; /* Sfondo leggermente più chiaro */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+/* Titoli */
+h2 {
+  color: #ff8c42; /* Accento arancione */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Testo */
+p {
+  color: #e0e0e0;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Griglia Spotify */
+.spotify-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Embed Spotify */
+.spotify-embed {
+  background: #333; /* Sfondo scuro per gli embed */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #444; /* Bordo metallico */
+}
+
+.spotify-embed:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 140, 66, 0.2); /* Ombra con accento arancione */
+}
+
+/* Sfondo con texture di legno */
+body {
+  background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Texture di legno */
+  background-color: #1a1a1a; /* Colore di fallback */
+  margin: 0;
+  padding: 0;
+}

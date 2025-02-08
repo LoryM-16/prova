@@ -1,0 +1,58 @@
+/* Stile della Navbar */
+.navbar {
+  background-color: #1a1a1a; /* Sfondo scuro */
+  color: #e0e0e0; /* Testo chiaro */
+  border-bottom: 2px solid #ff8c42; /* Accento arancione */
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+/* Link di navigazione */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff8c42; /* Accento arancione al passaggio del mouse */
+}
+
+/* Effetto metallico sui pulsanti */
+.mat-button {
+  background-color: #333; /* Sfondo scuro */
+  border: 1px solid #444; /* Bordo metallico */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mat-button:hover {
+  background-color: #444; /* Sfondo più chiaro al passaggio del mouse */
+  transform: translateY(-2px); /* Effetto di sollevamento */
+}
